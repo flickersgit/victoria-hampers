@@ -1,0 +1,249 @@
+/* Custom styles for Victoria Hampers */
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f0e6dd;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #cdab8f;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #b98a68;
+}
+
+/* Product card hover effects */
+.product-card {
+    transition: all 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+}
+
+.product-card:hover .product-image {
+    transform: scale(1.05);
+}
+
+.product-image {
+    transition: transform 0.5s ease;
+}
+
+/* Category icon animation */
+.category-icon {
+    transition: all 0.3s ease;
+}
+
+.group:hover .category-icon {
+    transform: scale(1.1) rotate(5deg);
+}
+
+/* Button pulse animation for WhatsApp */
+@keyframes pulse {
+    0%, 100% {
+        box-shadow: 0 0 0 0 rgba(22, 163, 74, 0.4);
+    }
+    50% {
+        box-shadow: 0 0 0 15px rgba(22, 163, 74, 0);
+    }
+}
+
+.wa-pulse {
+    animation: pulse 2s infinite;
+}
+
+/* Loading skeleton */
+.skeleton {
+    background: linear-gradient(90deg, #f0e6dd 25%, #e0ccba 50%, #f0e6dd 75%);
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: 200% 0;
+    }
+    100% {
+        background-position: -200% 0;
+    }
+}
+
+/* Image placeholder */
+.image-placeholder {
+    background: linear-gradient(135deg, #f0e6dd 0%, #e0ccba 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-placeholder::before {
+    content: '\f03e';
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 400;
+    font-size: 3rem;
+    color: #cdab8f;
+}
+
+/* FAQ animation */
+.faq-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.faq-content:not(.hidden) {
+    max-height: 500px;
+}
+
+/* Mobile menu animation */
+#mobileMenu {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+#mobileMenu:not(.hidden) {
+    max-height: 300px;
+}
+
+/* Toast notification */
+.toast {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 16px 24px;
+    border-radius: 12px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    transform: translateY(100px);
+    opacity: 0;
+    transition: all 0.3s ease;
+    z-index: 9999;
+}
+
+.toast.show {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.toast.success {
+    background: #16a34a;
+    color: white;
+}
+
+.toast.error {
+    background: #dc2626;
+    color: white;
+}
+
+/* Floating WhatsApp button */
+.floating-wa {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    width: 60px;
+    height: 60px;
+    background: #25D366;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+.floating-wa:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 30px rgba(37, 211, 102, 0.5);
+}
+
+.floating-wa i {
+    font-size: 2rem;
+    color: white;
+}
+
+/* Hero section background pattern */
+.hero-pattern {
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23d4912d' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* Badge styles */
+.badge {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.badge-new {
+    background: #fef3c7;
+    color: #92400e;
+}
+
+.badge-bestseller {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+.badge-promo {
+    background: #dcfce7;
+    color: #166534;
+}
+
+/* Price styles */
+.price-original {
+    text-decoration: line-through;
+    color: #9ca3af;
+    font-size: 0.875rem;
+}
+
+.price-discount {
+    color: #dc2626;
+    font-weight: 700;
+}
+
+/* Form focus styles */
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #d4912d;
+    box-shadow: 0 0 0 3px rgba(212, 145, 45, 0.1);
+}
+
+/* Radio and checkbox custom styles */
+input[type="radio"] {
+    accent-color: #d4912d;
+}
+
+input[type="checkbox"] {
+    accent-color: #d4912d;
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+    .floating-wa {
+        bottom: 16px;
+        right: 16px;
+        width: 50px;
+        height: 50px;
+    }
+
+    .floating-wa i {
+        font-size: 1.5rem;
+    }
+}

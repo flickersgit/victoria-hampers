@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Produk - Victoria Hampers</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#fdfaf3',
+                            100: '#f9f0d9',
+                            200: '#f2deb2',
+                            300: '#e9c67a',
+                            400: '#e0ab4a',
+                            500: '#d4912d',
+                            600: '#bc7323',
+                            700: '#9c5620',
+                            800: '#804521',
+                            900: '#6a3a1f',
+                        },
+                        brown: {
+                            50: '#faf6f3',
+                            100: '#f0e6dd',
+                            200: '#e0ccba',
+                            300: '#cdab8f',
+                            400: '#b98a68',
+                            500: '#ab7352',
+                            600: '#9d6146',
+                            700: '#834d3b',
+                            800: '#6b4134',
+                            900: '#58372d',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-brown-50">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="index.html" class="flex items-center space-x-2">
+                    <i class="fas fa-gift text-gold-500 text-2xl"></i>
+                    <span class="text-2xl font-bold text-brown-800">Victoria Hampers</span>
+                </a>
+
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-brown-700 hover:text-gold-600 transition">Beranda</a>
+                    <a href="catalog.html" class="text-gold-600 font-medium">Katalog</a>
+                    <a href="contact.html" class="text-brown-700 hover:text-gold-600 transition">Kontak</a>
+                </div>
+
+                <button id="mobileMenuBtn" class="md:hidden text-brown-700">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobileMenu" class="hidden md:hidden bg-white border-t">
+            <div class="px-4 py-3 space-y-2">
+                <a href="index.html" class="block py-2 text-brown-700">Beranda</a>
+                <a href="catalog.html" class="block py-2 text-gold-600 font-medium">Katalog</a>
+                <a href="contact.html" class="block py-2 text-brown-700">Kontak</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <div class="bg-white border-b">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
+            <nav class="flex items-center space-x-2 text-sm">
+                <a href="index.html" class="text-brown-500 hover:text-gold-600">Beranda</a>
+                <i class="fas fa-chevron-right text-brown-300 text-xs"></i>
+                <a href="catalog.html" class="text-brown-500 hover:text-gold-600">Katalog</a>
+                <i class="fas fa-chevron-right text-brown-300 text-xs"></i>
+                <span id="breadcrumbProduct" class="text-brown-800 font-medium">Detail Produk</span>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Product Detail -->
+    <section class="py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div id="productDetail" class="bg-white rounded-2xl shadow-lg overflow-hidden">
+                <!-- Product content will be loaded by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Products -->
+    <section class="py-12 bg-brown-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-2xl font-bold text-brown-800 mb-6">Produk Terkait</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6" id="relatedProducts">
+                <!-- Related products will be loaded by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-brown-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="col-span-1 md:col-span-2">
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i class="fas fa-gift text-gold-400 text-2xl"></i>
+                        <span class="text-2xl font-bold">Victoria Hampers</span>
+                    </div>
+                    <p class="text-brown-300 mb-4">Menyediakan hampers premium untuk setiap momen spesial Anda. Kualitas terbaik dengan kemasan elegan.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-brown-300 hover:text-gold-400 transition"><i class="fab fa-instagram text-xl"></i></a>
+                        <a href="#" class="text-brown-300 hover:text-gold-400 transition"><i class="fab fa-facebook text-xl"></i></a>
+                        <a href="#" class="text-brown-300 hover:text-gold-400 transition"><i class="fab fa-tiktok text-xl"></i></a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Menu</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-brown-300 hover:text-gold-400 transition">Beranda</a></li>
+                        <li><a href="catalog.html" class="text-brown-300 hover:text-gold-400 transition">Katalog</a></li>
+                        <li><a href="contact.html" class="text-brown-300 hover:text-gold-400 transition">Kontak</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Kontak</h4>
+                    <ul class="space-y-2 text-brown-300">
+                        <li><i class="fab fa-whatsapp mr-2"></i>+62 812-3456-7890</li>
+                        <li><i class="fas fa-envelope mr-2"></i>hello@victoriahampers.com</li>
+                        <li><i class="fas fa-map-marker-alt mr-2"></i>Jakarta, Indonesia</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-brown-700 mt-8 pt-8 text-center text-brown-400">
+                <p>&copy; 2024 Victoria Hampers. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const productId = parseInt(urlParams.get('id'));
+
+            if (productId) {
+                loadProductDetail(productId);
+            } else {
+                window.location.href = 'catalog.html';
+            }
+        });
+
+        function loadProductDetail(productId) {
+            const product = products.find(p => p.id === productId);
+
+            if (!product) {
+                window.location.href = 'catalog.html';
+                return;
+            }
+
+            document.title = `${product.name} - Victoria Hampers`;
+            document.getElementById('breadcrumbProduct').textContent = product.name;
+
+            const categoryLabels = {
+                'lebaran': 'Lebaran',
+                'natal': 'Natal & Tahun Baru',
+                'imlek': 'Imlek',
+                'wedding': 'Wedding/Seserahan',
+                'baby': 'Baby Born',
+                'corporate': 'Corporate Gift'
+            };
+
+            const detailHTML = `
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 p-6 lg:p-8">
+                    <!-- Image Gallery -->
+                    <div>
+                        <div class="aspect-square rounded-xl overflow-hidden bg-brown-100 mb-4">
+                            <img id="mainImage" src="${product.image}" alt="${product.name}" class="w-full h-full object-cover">
+                        </div>
+                        <div class="grid grid-cols-4 gap-2">
+                            <button onclick="changeImage('${product.image}')" class="aspect-square rounded-lg overflow-hidden bg-brown-100 border-2 border-gold-500">
+                                <img src="${product.image}" alt="${product.name}" class="w-full h-full object-cover">
+                            </button>
+                            <button onclick="changeImage('${product.image}')" class="aspect-square rounded-lg overflow-hidden bg-brown-100 border-2 border-transparent hover:border-gold-300">
+                                <img src="${product.image}" alt="${product.name}" class="w-full h-full object-cover">
+                            </button>
+                            <button onclick="changeImage('${product.image}')" class="aspect-square rounded-lg overflow-hidden bg-brown-100 border-2 border-transparent hover:border-gold-300">
+                                <img src="${product.image}" alt="${product.name}" class="w-full h-full object-cover">
+                            </button>
+                            <button onclick="changeImage('${product.image}')" class="aspect-square rounded-lg overflow-hidden bg-brown-100 border-2 border-transparent hover:border-gold-300">
+                                <img src="${product.image}" alt="${product.name}" class="w-full h-full object-cover">
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Product Info -->
+                    <div>
+                        <span class="inline-block bg-gold-100 text-gold-700 px-3 py-1 rounded-full text-sm font-medium mb-3">
+                            ${categoryLabels[product.category]}
+                        </span>
+                        <h1 class="text-3xl font-bold text-brown-800 mb-4">${product.name}</h1>
+                        <p class="text-3xl font-bold text-gold-600 mb-6">${formatPrice(product.price)}</p>
+
+                        <p class="text-brown-600 mb-6">${product.description}</p>
+
+                        <div class="mb-6">
+                            <h3 class="font-semibold text-brown-800 mb-3">Isi Hampers:</h3>
+                            <ul class="space-y-2">
+                                ${product.items.map(item => `
+                                    <li class="flex items-center text-brown-600">
+                                        <i class="fas fa-check text-gold-500 mr-3"></i>
+                                        ${item}
+                                    </li>
+                                `).join('')}
+                            </ul>
+                        </div>
+
+                        <div class="flex flex-col sm:flex-row gap-4">
+                            <a href="https://wa.me/6281234567890?text=Halo,%20saya%20tertarik%20dengan%20${encodeURIComponent(product.name)}%20(${formatPrice(product.price)})"
+                               target="_blank"
+                               class="flex-1 bg-green-600 hover:bg-green-700 text-white px-6 py-4 rounded-full font-semibold text-center transition transform hover:scale-105">
+                                <i class="fab fa-whatsapp mr-2"></i>Pesan via WhatsApp
+                            </a>
+                            <button onclick="window.history.back()" class="px-6 py-4 border-2 border-brown-300 text-brown-700 rounded-full font-semibold hover:bg-brown-100 transition">
+                                <i class="fas fa-arrow-left mr-2"></i>Kembali
+                            </button>
+                        </div>
+
+                        <div class="mt-8 p-4 bg-gold-50 rounded-xl">
+                            <h4 class="font-semibold text-brown-800 mb-2"><i class="fas fa-info-circle text-gold-500 mr-2"></i>Informasi</h4>
+                            <ul class="text-sm text-brown-600 space-y-1">
+                                <li>• Pemesanan H-3 sebelum pengiriman</li>
+                                <li>• Custom kartu ucapan tersedia</li>
+                                <li>• Pengiriman ke seluruh Indonesia</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            `;
+
+            document.getElementById('productDetail').innerHTML = detailHTML;
+
+            // Load related products
+            const relatedProducts = products
+                .filter(p => p.category === product.category && p.id !== product.id)
+                .slice(0, 4);
+
+            const relatedContainer = document.getElementById('relatedProducts');
+            relatedContainer.innerHTML = relatedProducts.map(p => createProductCard(p)).join('');
+        }
+
+        function changeImage(src) {
+            document.getElementById('mainImage').src = src;
+        }
+    </script>
+</body>
+</html>

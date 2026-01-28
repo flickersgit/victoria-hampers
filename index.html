@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Victoria Hampers - Hampers Premium untuk Setiap Momen Spesial</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#fdfaf3',
+                            100: '#f9f0d9',
+                            200: '#f2deb2',
+                            300: '#e9c67a',
+                            400: '#e0ab4a',
+                            500: '#d4912d',
+                            600: '#bc7323',
+                            700: '#9c5620',
+                            800: '#804521',
+                            900: '#6a3a1f',
+                        },
+                        brown: {
+                            50: '#faf6f3',
+                            100: '#f0e6dd',
+                            200: '#e0ccba',
+                            300: '#cdab8f',
+                            400: '#b98a68',
+                            500: '#ab7352',
+                            600: '#9d6146',
+                            700: '#834d3b',
+                            800: '#6b4134',
+                            900: '#58372d',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-brown-50">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="index.html" class="flex items-center space-x-2">
+                    <i class="fas fa-gift text-gold-500 text-2xl"></i>
+                    <span class="text-2xl font-bold text-brown-800">Victoria Hampers</span>
+                </a>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gold-600 font-medium">Beranda</a>
+                    <a href="catalog.html" class="text-brown-700 hover:text-gold-600 transition">Katalog</a>
+                    <a href="contact.html" class="text-brown-700 hover:text-gold-600 transition">Kontak</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobileMenuBtn" class="md:hidden text-brown-700">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="hidden md:hidden bg-white border-t">
+            <div class="px-4 py-3 space-y-2">
+                <a href="index.html" class="block py-2 text-gold-600 font-medium">Beranda</a>
+                <a href="catalog.html" class="block py-2 text-brown-700">Katalog</a>
+                <a href="contact.html" class="block py-2 text-brown-700">Kontak</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-r from-brown-800 to-brown-900 text-white">
+        <div class="absolute inset-0 bg-black opacity-40"></div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6">
+                    <span class="text-gold-400">Victoria</span> Hampers
+                </h1>
+                <p class="text-xl md:text-2xl mb-8 text-brown-100">
+                    Hadiah Premium untuk Setiap Momen Spesial Anda
+                </p>
+                <p class="text-lg mb-10 text-brown-200 max-w-2xl mx-auto">
+                    Koleksi hampers eksklusif dengan kemasan elegan dan produk berkualitas tinggi untuk berbagai perayaan
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="catalog.html" class="bg-gold-500 hover:bg-gold-600 text-white px-8 py-4 rounded-full font-semibold text-lg transition transform hover:scale-105">
+                        <i class="fas fa-eye mr-2"></i>Lihat Katalog
+                    </a>
+                    <a href="https://wa.me/6281234567890" target="_blank" class="bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-full font-semibold text-lg transition transform hover:scale-105">
+                        <i class="fab fa-whatsapp mr-2"></i>Pesan Sekarang
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-brown-800 mb-4">Kategori Hampers</h2>
+                <p class="text-brown-600 text-lg">Pilih hampers sesuai momen spesial Anda</p>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+                <a href="catalog.html?category=lebaran" class="group bg-brown-50 rounded-xl p-6 text-center hover:bg-gold-50 hover:shadow-lg transition">
+                    <div class="w-16 h-16 mx-auto mb-4 bg-gold-100 rounded-full flex items-center justify-center group-hover:bg-gold-200 transition">
+                        <i class="fas fa-moon text-2xl text-gold-600"></i>
+                    </div>
+                    <h3 class="font-semibold text-brown-800">Lebaran</h3>
+                </a>
+
+                <a href="catalog.html?category=natal" class="group bg-brown-50 rounded-xl p-6 text-center hover:bg-gold-50 hover:shadow-lg transition">
+                    <div class="w-16 h-16 mx-auto mb-4 bg-gold-100 rounded-full flex items-center justify-center group-hover:bg-gold-200 transition">
+                        <i class="fas fa-tree text-2xl text-gold-600"></i>
+                    </div>
+                    <h3 class="font-semibold text-brown-800">Natal</h3>
+                </a>
+
+                <a href="catalog.html?category=imlek" class="group bg-brown-50 rounded-xl p-6 text-center hover:bg-gold-50 hover:shadow-lg transition">
+                    <div class="w-16 h-16 mx-auto mb-4 bg-gold-100 rounded-full flex items-center justify-center group-hover:bg-gold-200 transition">
+                        <i class="fas fa-dragon text-2xl text-gold-600"></i>
+                    </div>
+                    <h3 class="font-semibold text-brown-800">Imlek</h3>
+                </a>
+
+                <a href="catalog.html?category=wedding" class="group bg-brown-50 rounded-xl p-6 text-center hover:bg-gold-50 hover:shadow-lg transition">
+                    <div class="w-16 h-16 mx-auto mb-4 bg-gold-100 rounded-full flex items-center justify-center group-hover:bg-gold-200 transition">
+                        <i class="fas fa-rings-wedding text-2xl text-gold-600"></i>
+                    </div>
+                    <h3 class="font-semibold text-brown-800">Wedding</h3>
+                </a>
+
+                <a href="catalog.html?category=baby" class="group bg-brown-50 rounded-xl p-6 text-center hover:bg-gold-50 hover:shadow-lg transition">
+                    <div class="w-16 h-16 mx-auto mb-4 bg-gold-100 rounded-full flex items-center justify-center group-hover:bg-gold-200 transition">
+                        <i class="fas fa-baby text-2xl text-gold-600"></i>
+                    </div>
+                    <h3 class="font-semibold text-brown-800">Baby Born</h3>
+                </a>
+
+                <a href="catalog.html?category=corporate" class="group bg-brown-50 rounded-xl p-6 text-center hover:bg-gold-50 hover:shadow-lg transition">
+                    <div class="w-16 h-16 mx-auto mb-4 bg-gold-100 rounded-full flex items-center justify-center group-hover:bg-gold-200 transition">
+                        <i class="fas fa-building text-2xl text-gold-600"></i>
+                    </div>
+                    <h3 class="font-semibold text-brown-800">Corporate</h3>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="py-16 bg-brown-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-brown-800 mb-4">Produk Unggulan</h2>
+                <p class="text-brown-600 text-lg">Hampers terlaris dan paling diminati</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6" id="featuredProducts">
+                <!-- Products will be loaded by JavaScript -->
+            </div>
+
+            <div class="text-center mt-10">
+                <a href="catalog.html" class="inline-block bg-brown-700 hover:bg-brown-800 text-white px-8 py-3 rounded-full font-semibold transition">
+                    Lihat Semua Produk <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-brown-800 mb-4">Mengapa Victoria Hampers?</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="w-20 h-20 mx-auto mb-4 bg-gold-100 rounded-full flex items-center justify-center">
+                        <i class="fas fa-gem text-3xl text-gold-600"></i>
+                    </div>
+                    <h3 class="font-bold text-brown-800 text-lg mb-2">Produk Premium</h3>
+                    <p class="text-brown-600">Hanya produk berkualitas tinggi dari brand terpercaya</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-20 h-20 mx-auto mb-4 bg-gold-100 rounded-full flex items-center justify-center">
+                        <i class="fas fa-box-open text-3xl text-gold-600"></i>
+                    </div>
+                    <h3 class="font-bold text-brown-800 text-lg mb-2">Kemasan Eksklusif</h3>
+                    <p class="text-brown-600">Packaging elegan yang siap untuk dijadikan hadiah</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-20 h-20 mx-auto mb-4 bg-gold-100 rounded-full flex items-center justify-center">
+                        <i class="fas fa-truck text-3xl text-gold-600"></i>
+                    </div>
+                    <h3 class="font-bold text-brown-800 text-lg mb-2">Pengiriman Aman</h3>
+                    <p class="text-brown-600">Dikemas dengan hati-hati untuk pengiriman yang aman</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-20 h-20 mx-auto mb-4 bg-gold-100 rounded-full flex items-center justify-center">
+                        <i class="fas fa-headset text-3xl text-gold-600"></i>
+                    </div>
+                    <h3 class="font-bold text-brown-800 text-lg mb-2">Layanan Terbaik</h3>
+                    <p class="text-brown-600">Tim kami siap membantu kebutuhan hampers Anda</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-16 bg-gradient-to-r from-brown-700 to-brown-800 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Kata Pelanggan Kami</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white/10 backdrop-blur rounded-xl p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="text-gold-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="mb-4 text-brown-100">"Hampers dari Victoria sangat cantik dan elegan! Penerima sangat senang dengan hadiahnya. Pasti akan order lagi!"</p>
+                    <p class="font-semibold text-gold-300">- Ibu Sarah, Jakarta</p>
+                </div>
+
+                <div class="bg-white/10 backdrop-blur rounded-xl p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="text-gold-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="mb-4 text-brown-100">"Pelayanan cepat dan ramah. Hampers dikemas dengan sangat rapi. Recommended untuk corporate gift!"</p>
+                    <p class="font-semibold text-gold-300">- Bapak Andi, Surabaya</p>
+                </div>
+
+                <div class="bg-white/10 backdrop-blur rounded-xl p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="text-gold-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="mb-4 text-brown-100">"Sudah 3x order untuk acara kantor, selalu puas dengan kualitasnya. Harga juga reasonable untuk kualitas premium."</p>
+                    <p class="font-semibold text-gold-300">- Ibu Maya, Bandung</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-gold-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-brown-800 mb-4">Siap Memesan Hampers?</h2>
+            <p class="text-lg text-brown-600 mb-8">Hubungi kami sekarang untuk konsultasi dan pemesanan hampers sesuai kebutuhan Anda</p>
+            <a href="https://wa.me/6281234567890" target="_blank" class="inline-block bg-green-600 hover:bg-green-700 text-white px-10 py-4 rounded-full font-semibold text-lg transition transform hover:scale-105">
+                <i class="fab fa-whatsapp mr-2 text-xl"></i>Chat via WhatsApp
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-brown-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="col-span-1 md:col-span-2">
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i class="fas fa-gift text-gold-400 text-2xl"></i>
+                        <span class="text-2xl font-bold">Victoria Hampers</span>
+                    </div>
+                    <p class="text-brown-300 mb-4">Menyediakan hampers premium untuk setiap momen spesial Anda. Kualitas terbaik dengan kemasan elegan.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-brown-300 hover:text-gold-400 transition"><i class="fab fa-instagram text-xl"></i></a>
+                        <a href="#" class="text-brown-300 hover:text-gold-400 transition"><i class="fab fa-facebook text-xl"></i></a>
+                        <a href="#" class="text-brown-300 hover:text-gold-400 transition"><i class="fab fa-tiktok text-xl"></i></a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Menu</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-brown-300 hover:text-gold-400 transition">Beranda</a></li>
+                        <li><a href="catalog.html" class="text-brown-300 hover:text-gold-400 transition">Katalog</a></li>
+                        <li><a href="contact.html" class="text-brown-300 hover:text-gold-400 transition">Kontak</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Kontak</h4>
+                    <ul class="space-y-2 text-brown-300">
+                        <li><i class="fab fa-whatsapp mr-2"></i>+62 812-3456-7890</li>
+                        <li><i class="fas fa-envelope mr-2"></i>hello@victoriahampers.com</li>
+                        <li><i class="fas fa-map-marker-alt mr-2"></i>Jakarta, Indonesia</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-brown-700 mt-8 pt-8 text-center text-brown-400">
+                <p>&copy; 2024 Victoria Hampers. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

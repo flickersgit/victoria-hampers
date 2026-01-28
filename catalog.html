@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katalog - Victoria Hampers</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#fdfaf3',
+                            100: '#f9f0d9',
+                            200: '#f2deb2',
+                            300: '#e9c67a',
+                            400: '#e0ab4a',
+                            500: '#d4912d',
+                            600: '#bc7323',
+                            700: '#9c5620',
+                            800: '#804521',
+                            900: '#6a3a1f',
+                        },
+                        brown: {
+                            50: '#faf6f3',
+                            100: '#f0e6dd',
+                            200: '#e0ccba',
+                            300: '#cdab8f',
+                            400: '#b98a68',
+                            500: '#ab7352',
+                            600: '#9d6146',
+                            700: '#834d3b',
+                            800: '#6b4134',
+                            900: '#58372d',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-brown-50">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="index.html" class="flex items-center space-x-2">
+                    <i class="fas fa-gift text-gold-500 text-2xl"></i>
+                    <span class="text-2xl font-bold text-brown-800">Victoria Hampers</span>
+                </a>
+
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-brown-700 hover:text-gold-600 transition">Beranda</a>
+                    <a href="catalog.html" class="text-gold-600 font-medium">Katalog</a>
+                    <a href="contact.html" class="text-brown-700 hover:text-gold-600 transition">Kontak</a>
+                </div>
+
+                <button id="mobileMenuBtn" class="md:hidden text-brown-700">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobileMenu" class="hidden md:hidden bg-white border-t">
+            <div class="px-4 py-3 space-y-2">
+                <a href="index.html" class="block py-2 text-brown-700">Beranda</a>
+                <a href="catalog.html" class="block py-2 text-gold-600 font-medium">Katalog</a>
+                <a href="contact.html" class="block py-2 text-brown-700">Kontak</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="bg-gradient-to-r from-brown-700 to-brown-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h1 class="text-3xl md:text-4xl font-bold mb-2">Katalog Hampers</h1>
+            <p class="text-brown-200">Temukan hampers sempurna untuk setiap momen spesial</p>
+        </div>
+    </section>
+
+    <!-- Filter & Products -->
+    <section class="py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row gap-8">
+                <!-- Sidebar Filter -->
+                <aside class="lg:w-64 flex-shrink-0">
+                    <div class="bg-white rounded-xl shadow-md p-6 sticky top-24">
+                        <h3 class="font-bold text-brown-800 text-lg mb-4">Filter</h3>
+
+                        <!-- Category Filter -->
+                        <div class="mb-6">
+                            <h4 class="font-semibold text-brown-700 mb-3">Kategori</h4>
+                            <div class="space-y-2">
+                                <label class="flex items-center cursor-pointer">
+                                    <input type="radio" name="category" value="all" checked class="text-gold-500 focus:ring-gold-500">
+                                    <span class="ml-2 text-brown-600">Semua Kategori</span>
+                                </label>
+                                <label class="flex items-center cursor-pointer">
+                                    <input type="radio" name="category" value="lebaran" class="text-gold-500 focus:ring-gold-500">
+                                    <span class="ml-2 text-brown-600">Lebaran</span>
+                                </label>
+                                <label class="flex items-center cursor-pointer">
+                                    <input type="radio" name="category" value="natal" class="text-gold-500 focus:ring-gold-500">
+                                    <span class="ml-2 text-brown-600">Natal & Tahun Baru</span>
+                                </label>
+                                <label class="flex items-center cursor-pointer">
+                                    <input type="radio" name="category" value="imlek" class="text-gold-500 focus:ring-gold-500">
+                                    <span class="ml-2 text-brown-600">Imlek</span>
+                                </label>
+                                <label class="flex items-center cursor-pointer">
+                                    <input type="radio" name="category" value="wedding" class="text-gold-500 focus:ring-gold-500">
+                                    <span class="ml-2 text-brown-600">Wedding/Seserahan</span>
+                                </label>
+                                <label class="flex items-center cursor-pointer">
+                                    <input type="radio" name="category" value="baby" class="text-gold-500 focus:ring-gold-500">
+                                    <span class="ml-2 text-brown-600">Baby Born</span>
+                                </label>
+                                <label class="flex items-center cursor-pointer">
+                                    <input type="radio" name="category" value="corporate" class="text-gold-500 focus:ring-gold-500">
+                                    <span class="ml-2 text-brown-600">Corporate Gift</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Price Filter -->
+                        <div class="mb-6">
+                            <h4 class="font-semibold text-brown-700 mb-3">Rentang Harga</h4>
+                            <div class="space-y-2">
+                                <label class="flex items-center cursor-pointer">
+                                    <input type="radio" name="price" value="all" checked class="text-gold-500 focus:ring-gold-500">
+                                    <span class="ml-2 text-brown-600">Semua Harga</span>
+                                </label>
+                                <label class="flex items-center cursor-pointer">
+                                    <input type="radio" name="price" value="0-300000" class="text-gold-500 focus:ring-gold-500">
+                                    <span class="ml-2 text-brown-600">Di bawah Rp 300.000</span>
+                                </label>
+                                <label class="flex items-center cursor-pointer">
+                                    <input type="radio" name="price" value="300000-500000" class="text-gold-500 focus:ring-gold-500">
+                                    <span class="ml-2 text-brown-600">Rp 300.000 - 500.000</span>
+                                </label>
+                                <label class="flex items-center cursor-pointer">
+                                    <input type="radio" name="price" value="500000-1000000" class="text-gold-500 focus:ring-gold-500">
+                                    <span class="ml-2 text-brown-600">Rp 500.000 - 1.000.000</span>
+                                </label>
+                                <label class="flex items-center cursor-pointer">
+                                    <input type="radio" name="price" value="1000000-999999999" class="text-gold-500 focus:ring-gold-500">
+                                    <span class="ml-2 text-brown-600">Di atas Rp 1.000.000</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <button id="resetFilter" class="w-full bg-brown-100 hover:bg-brown-200 text-brown-700 py-2 rounded-lg transition">
+                            Reset Filter
+                        </button>
+                    </div>
+                </aside>
+
+                <!-- Products Grid -->
+                <div class="flex-1">
+                    <!-- Sort & Results Info -->
+                    <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-6 gap-4">
+                        <p class="text-brown-600"><span id="productCount">0</span> produk ditemukan</p>
+                        <select id="sortBy" class="bg-white border border-brown-200 rounded-lg px-4 py-2 text-brown-700 focus:outline-none focus:ring-2 focus:ring-gold-500">
+                            <option value="default">Urutkan: Default</option>
+                            <option value="price-low">Harga: Terendah</option>
+                            <option value="price-high">Harga: Tertinggi</option>
+                            <option value="name">Nama: A-Z</option>
+                        </select>
+                    </div>
+
+                    <!-- Products -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6" id="productGrid">
+                        <!-- Products will be loaded by JavaScript -->
+                    </div>
+
+                    <!-- Empty State -->
+                    <div id="emptyState" class="hidden text-center py-16">
+                        <i class="fas fa-box-open text-6xl text-brown-300 mb-4"></i>
+                        <h3 class="text-xl font-semibold text-brown-700 mb-2">Tidak ada produk ditemukan</h3>
+                        <p class="text-brown-500">Coba ubah filter pencarian Anda</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-brown-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="col-span-1 md:col-span-2">
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i class="fas fa-gift text-gold-400 text-2xl"></i>
+                        <span class="text-2xl font-bold">Victoria Hampers</span>
+                    </div>
+                    <p class="text-brown-300 mb-4">Menyediakan hampers premium untuk setiap momen spesial Anda. Kualitas terbaik dengan kemasan elegan.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-brown-300 hover:text-gold-400 transition"><i class="fab fa-instagram text-xl"></i></a>
+                        <a href="#" class="text-brown-300 hover:text-gold-400 transition"><i class="fab fa-facebook text-xl"></i></a>
+                        <a href="#" class="text-brown-300 hover:text-gold-400 transition"><i class="fab fa-tiktok text-xl"></i></a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Menu</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-brown-300 hover:text-gold-400 transition">Beranda</a></li>
+                        <li><a href="catalog.html" class="text-brown-300 hover:text-gold-400 transition">Katalog</a></li>
+                        <li><a href="contact.html" class="text-brown-300 hover:text-gold-400 transition">Kontak</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Kontak</h4>
+                    <ul class="space-y-2 text-brown-300">
+                        <li><i class="fab fa-whatsapp mr-2"></i>+62 812-3456-7890</li>
+                        <li><i class="fas fa-envelope mr-2"></i>hello@victoriahampers.com</li>
+                        <li><i class="fas fa-map-marker-alt mr-2"></i>Jakarta, Indonesia</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-brown-700 mt-8 pt-8 text-center text-brown-400">
+                <p>&copy; 2024 Victoria Hampers. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get category from URL
+            const urlParams = new URLSearchParams(window.location.search);
+            const categoryParam = urlParams.get('category');
+
+            if (categoryParam) {
+                const categoryRadio = document.querySelector(`input[name="category"][value="${categoryParam}"]`);
+                if (categoryRadio) {
+                    categoryRadio.checked = true;
+                    filterProducts();
+                }
+            }
+        });
+    </script>
+</body>
+</html>
