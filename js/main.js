@@ -47,7 +47,7 @@ const products = [
         name: "Hampers Imlek Prosperity",
         price: 650000,
         category: "imlek",
-        image: "https://images.unsplash.com/photo-1548043852-b9e0e4e15fd6?w=400&h=400&fit=crop",
+        image: "https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=400&h=400&fit=crop",
         description: "Hampers imlek dengan tema kemakmuran dan keberuntungan. Warna merah dan gold mendominasi.",
         items: ["Kue Keranjang Premium", "Jeruk Mandarin 1kg", "Teh Cina Premium", "Kacang-kacangan Assorted", "Ang Pao Exclusive"],
         featured: true

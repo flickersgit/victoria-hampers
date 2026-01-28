@@ -65,8 +65,48 @@ Data produk disimpan di `js/main.js` sebagai array JavaScript. Setiap produk mem
 1. Buka file `index.html` di browser
 2. Atau gunakan live server extension di VS Code
 
-## Customization
-- Edit data produk di `js/main.js`
+## Update Produk via Excel
+
+### File yang Dibutuhkan
+- `Victoria_Hampers_Products.xlsx` - Data produk
+- `update_products.py` - Script auto-update
+
+### Cara Update Produk
+1. Buka `Victoria_Hampers_Products.xlsx`
+2. Edit/tambah/hapus produk di sheet "Produk"
+3. Simpan file Excel
+4. Jalankan script:
+   ```bash
+   python3 update_products.py
+   ```
+5. Push ke GitHub:
+   ```bash
+   git add .
+   git commit -m "Update products"
+   git push
+   ```
+
+### Format Data Excel
+| Kolom | Format | Contoh |
+|-------|--------|--------|
+| ID | Angka | 1, 2, 3 |
+| Nama Produk | Teks | Hampers Lebaran |
+| Harga | Angka (tanpa Rp) | 450000 |
+| Kategori | lebaran/natal/imlek/wedding/baby/corporate | lebaran |
+| Deskripsi | Teks | Paket hampers... |
+| Isi Hampers | Pisah dengan koma | Item 1, Item 2, Item 3 |
+| URL Gambar | URL lengkap | https://... |
+| Featured | Ya/Tidak | Ya |
+
+### Update Gambar Produk
+**Opsi 1 - Upload ke repo:**
+1. Simpan gambar di folder `images/`
+2. URL: `https://flickersgit.github.io/victoria-hampers/images/nama-file.jpg`
+
+**Opsi 2 - Image hosting:**
+- Imgur: https://imgur.com
+- Cloudinary: https://cloudinary.com
+
+## Customization Lainnya
 - Ganti nomor WhatsApp di semua file HTML
-- Tambah gambar produk di folder `images/`
 - Sesuaikan warna di Tailwind config di setiap HTML
