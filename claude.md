@@ -3,24 +3,32 @@
 ## Deskripsi Project
 Website katalog **Victoria Hampers** untuk menampilkan koleksi produk hampers/parcel premium dengan berbagai kategori dan harga.
 
+## Live Website
+- **URL**: https://flickersgit.github.io/victoria-hampers/
+- **Repo**: https://github.com/flickersgit/victoria-hampers
+
 ## Tech Stack
 - **Frontend**: HTML5, CSS3, JavaScript (Vanilla)
 - **Styling**: Tailwind CSS (CDN)
 - **Icons**: Font Awesome 6
+- **Hosting**: GitHub Pages
 
 ## Struktur Folder
 ```
 /
-├── index.html          # Halaman beranda
-├── catalog.html        # Halaman katalog produk
-├── product.html        # Halaman detail produk
-├── contact.html        # Halaman kontak & pemesanan
-├── claude.md           # Dokumentasi project
+├── index.html                      # Halaman beranda
+├── catalog.html                    # Halaman katalog produk
+├── product.html                    # Halaman detail produk
+├── contact.html                    # Halaman kontak & pemesanan
+├── claude.md                       # Dokumentasi project
+├── Victoria_Hampers_Products.xlsx  # Data produk (Excel)
+├── update_products.py              # Script auto-update produk
 ├── css/
-│   └── style.css       # Custom styles
+│   └── style.css                   # Custom styles
 ├── js/
-│   └── main.js         # JavaScript utama & data produk
-└── images/             # Folder untuk gambar produk
+│   └── main.js                     # JavaScript utama & data produk
+└── images/
+    └── logo.png                    # Logo Victoria Hampers
 ```
 
 ## Fitur Website
@@ -40,30 +48,25 @@ Website katalog **Victoria Hampers** untuk menampilkan koleksi produk hampers/pa
 6. Hampers Corporate Gift
 
 ## Warna Theme
-- **Primary (Gold)**: #d4912d
-- **Secondary (Brown)**: #6b4134
-- **Background**: #faf6f3
+Warna disesuaikan dengan branding Instagram @victoriahampers:
+- **Cream**: #FEF9F3, #F5E6D3 (background)
+- **Tan**: #C4A77D, #B39768 (aksen, button)
+- **Sage**: #B5C4A8 (optional accent)
+- **Text**: #5E4E33 (dark brown)
 
-## Data Produk
-Data produk disimpan di `js/main.js` sebagai array JavaScript. Setiap produk memiliki:
-- `id`: ID unik
-- `name`: Nama produk
-- `price`: Harga (number)
-- `category`: Kategori
-- `image`: URL gambar
-- `description`: Deskripsi
-- `items`: Array isi hampers
-- `featured`: Boolean untuk produk unggulan
+## Kontak
+- **WhatsApp**: +65 8500 3405
+- **Email**: hello@victoriahampers.com
+- **Instagram**: @victoriahampers
 
-## Kontak Default
-- WhatsApp: +62 812-3456-7890
-- Email: hello@victoriahampers.com
-- Instagram: @victoriahampers
-- Lokasi: Jakarta, Indonesia
+## Cara Menjalankan Lokal
+```bash
+# Buka langsung di browser
+open index.html
 
-## Cara Menjalankan
-1. Buka file `index.html` di browser
-2. Atau gunakan live server extension di VS Code
+# Atau dengan live server
+npx live-server
+```
 
 ## Update Produk via Excel
 
@@ -107,6 +110,16 @@ Data produk disimpan di `js/main.js` sebagai array JavaScript. Setiap produk mem
 - Imgur: https://imgur.com
 - Cloudinary: https://cloudinary.com
 
-## Customization Lainnya
-- Ganti nomor WhatsApp di semua file HTML
-- Sesuaikan warna di Tailwind config di setiap HTML
+## Deploy ke GitHub Pages
+```bash
+git add .
+git commit -m "Update..."
+git push
+```
+Website akan auto-update dalam 1-2 menit.
+
+## Customization
+- **Logo**: Ganti `images/logo.png`
+- **WhatsApp**: Edit nomor di semua file HTML (cari `6585003405`)
+- **Warna**: Edit Tailwind config di `<script>` tag setiap HTML
+- **Produk**: Edit via Excel + jalankan `update_products.py`
