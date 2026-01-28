@@ -151,7 +151,7 @@ function createProductCard(product) {
                 </div>
             </a>
             <div class="px-4 pb-4">
-                <a href="https://wa.me/6281234567890?text=Halo,%20saya%20tertarik%20dengan%20${encodeURIComponent(product.name)}%20(${formatPrice(product.price)})"
+                <a href="https://wa.me/6585003405?text=Halo,%20saya%20tertarik%20dengan%20${encodeURIComponent(product.name)}%20(${formatPrice(product.price)})"
                    target="_blank"
                    class="block w-full bg-green-600 hover:bg-green-700 text-white py-2 rounded-lg text-center text-sm font-medium transition">
                     <i class="fab fa-whatsapp mr-1"></i> Pesan
@@ -290,7 +290,7 @@ function addFloatingWhatsApp() {
     if (existingBtn) return;
 
     const btn = document.createElement('a');
-    btn.href = 'https://wa.me/6281234567890';
+    btn.href = 'https://wa.me/6585003405';
     btn.target = '_blank';
     btn.className = 'floating-wa wa-pulse';
     btn.innerHTML = '<i class="fab fa-whatsapp"></i>';
