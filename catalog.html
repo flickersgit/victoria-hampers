@@ -12,29 +12,41 @@
             theme: {
                 extend: {
                     colors: {
-                        gold: {
-                            50: '#fdfaf3',
-                            100: '#f9f0d9',
-                            200: '#f2deb2',
-                            300: '#e9c67a',
-                            400: '#e0ab4a',
-                            500: '#d4912d',
-                            600: '#bc7323',
-                            700: '#9c5620',
-                            800: '#804521',
-                            900: '#6a3a1f',
+                        cream: {
+                            50: '#FFFDF9',
+                            100: '#FEF9F3',
+                            200: '#F9F1E8',
+                            300: '#F5E6D3',
+                            400: '#EDE0D4',
+                            500: '#E6D5C3',
+                            600: '#D5C4B0',
+                            700: '#C4B39D',
+                            800: '#A89683',
+                            900: '#8C7A69',
                         },
-                        brown: {
-                            50: '#faf6f3',
-                            100: '#f0e6dd',
-                            200: '#e0ccba',
-                            300: '#cdab8f',
-                            400: '#b98a68',
-                            500: '#ab7352',
-                            600: '#9d6146',
-                            700: '#834d3b',
-                            800: '#6b4134',
-                            900: '#58372d',
+                        tan: {
+                            50: '#FCF8F4',
+                            100: '#F5EBE0',
+                            200: '#E8D5C0',
+                            300: '#D5B895',
+                            400: '#C4A77D',
+                            500: '#B39768',
+                            600: '#9D8257',
+                            700: '#7D6844',
+                            800: '#5E4E33',
+                            900: '#3F3422',
+                        },
+                        sage: {
+                            50: '#F6F7F4',
+                            100: '#E8EBE4',
+                            200: '#D1D9C9',
+                            300: '#B5C4A8',
+                            400: '#9AB08B',
+                            500: '#7E9B6E',
+                            600: '#658056',
+                            700: '#4D6341',
+                            800: '#35462D',
+                            900: '#1E291A',
                         }
                     }
                 }
@@ -42,23 +54,23 @@
         }
     </script>
 </head>
-<body class="bg-brown-50">
+<body class="bg-cream-100">
     <!-- Navbar -->
     <nav class="bg-white shadow-md sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
                 <a href="index.html" class="flex items-center space-x-2">
-                    <i class="fas fa-gift text-gold-500 text-2xl"></i>
-                    <span class="text-2xl font-bold text-brown-800">Victoria Hampers</span>
+                    <i class="fas fa-gift text-tan-500 text-2xl"></i>
+                    <span class="text-2xl font-bold text-tan-800">Victoria Hampers</span>
                 </a>
 
                 <div class="hidden md:flex space-x-8">
-                    <a href="index.html" class="text-brown-700 hover:text-gold-600 transition">Beranda</a>
-                    <a href="catalog.html" class="text-gold-600 font-medium">Katalog</a>
-                    <a href="contact.html" class="text-brown-700 hover:text-gold-600 transition">Kontak</a>
+                    <a href="index.html" class="text-tan-700 hover:text-tan-500 transition">Beranda</a>
+                    <a href="catalog.html" class="text-tan-500 font-medium">Katalog</a>
+                    <a href="contact.html" class="text-tan-700 hover:text-tan-500 transition">Kontak</a>
                 </div>
 
-                <button id="mobileMenuBtn" class="md:hidden text-brown-700">
+                <button id="mobileMenuBtn" class="md:hidden text-tan-700">
                     <i class="fas fa-bars text-xl"></i>
                 </button>
             </div>
@@ -66,18 +78,18 @@
 
         <div id="mobileMenu" class="hidden md:hidden bg-white border-t">
             <div class="px-4 py-3 space-y-2">
-                <a href="index.html" class="block py-2 text-brown-700">Beranda</a>
-                <a href="catalog.html" class="block py-2 text-gold-600 font-medium">Katalog</a>
-                <a href="contact.html" class="block py-2 text-brown-700">Kontak</a>
+                <a href="index.html" class="block py-2 text-tan-700">Beranda</a>
+                <a href="catalog.html" class="block py-2 text-tan-500 font-medium">Katalog</a>
+                <a href="contact.html" class="block py-2 text-tan-700">Kontak</a>
             </div>
         </div>
     </nav>
 
     <!-- Page Header -->
-    <section class="bg-gradient-to-r from-brown-700 to-brown-800 text-white py-12">
+    <section class="bg-gradient-to-r from-tan-600 to-tan-700 text-white py-12">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h1 class="text-3xl md:text-4xl font-bold mb-2">Katalog Hampers</h1>
-            <p class="text-brown-200">Temukan hampers sempurna untuk setiap momen spesial</p>
+            <p class="text-cream-300">Temukan hampers sempurna untuk setiap momen spesial</p>
         </div>
     </section>
 
@@ -88,71 +100,71 @@
                 <!-- Sidebar Filter -->
                 <aside class="lg:w-64 flex-shrink-0">
                     <div class="bg-white rounded-xl shadow-md p-6 sticky top-24">
-                        <h3 class="font-bold text-brown-800 text-lg mb-4">Filter</h3>
+                        <h3 class="font-bold text-tan-800 text-lg mb-4">Filter</h3>
 
                         <!-- Category Filter -->
                         <div class="mb-6">
-                            <h4 class="font-semibold text-brown-700 mb-3">Kategori</h4>
+                            <h4 class="font-semibold text-tan-700 mb-3">Kategori</h4>
                             <div class="space-y-2">
                                 <label class="flex items-center cursor-pointer">
-                                    <input type="radio" name="category" value="all" checked class="text-gold-500 focus:ring-gold-500">
-                                    <span class="ml-2 text-brown-600">Semua Kategori</span>
+                                    <input type="radio" name="category" value="all" checked class="text-tan-500 focus:ring-tan-400">
+                                    <span class="ml-2 text-tan-700">Semua Kategori</span>
                                 </label>
                                 <label class="flex items-center cursor-pointer">
-                                    <input type="radio" name="category" value="lebaran" class="text-gold-500 focus:ring-gold-500">
-                                    <span class="ml-2 text-brown-600">Lebaran</span>
+                                    <input type="radio" name="category" value="lebaran" class="text-tan-500 focus:ring-tan-400">
+                                    <span class="ml-2 text-tan-700">Lebaran</span>
                                 </label>
                                 <label class="flex items-center cursor-pointer">
-                                    <input type="radio" name="category" value="natal" class="text-gold-500 focus:ring-gold-500">
-                                    <span class="ml-2 text-brown-600">Natal & Tahun Baru</span>
+                                    <input type="radio" name="category" value="natal" class="text-tan-500 focus:ring-tan-400">
+                                    <span class="ml-2 text-tan-700">Natal & Tahun Baru</span>
                                 </label>
                                 <label class="flex items-center cursor-pointer">
-                                    <input type="radio" name="category" value="imlek" class="text-gold-500 focus:ring-gold-500">
-                                    <span class="ml-2 text-brown-600">Imlek</span>
+                                    <input type="radio" name="category" value="imlek" class="text-tan-500 focus:ring-tan-400">
+                                    <span class="ml-2 text-tan-700">Imlek</span>
                                 </label>
                                 <label class="flex items-center cursor-pointer">
-                                    <input type="radio" name="category" value="wedding" class="text-gold-500 focus:ring-gold-500">
-                                    <span class="ml-2 text-brown-600">Wedding/Seserahan</span>
+                                    <input type="radio" name="category" value="wedding" class="text-tan-500 focus:ring-tan-400">
+                                    <span class="ml-2 text-tan-700">Wedding/Seserahan</span>
                                 </label>
                                 <label class="flex items-center cursor-pointer">
-                                    <input type="radio" name="category" value="baby" class="text-gold-500 focus:ring-gold-500">
-                                    <span class="ml-2 text-brown-600">Baby Born</span>
+                                    <input type="radio" name="category" value="baby" class="text-tan-500 focus:ring-tan-400">
+                                    <span class="ml-2 text-tan-700">Baby Born</span>
                                 </label>
                                 <label class="flex items-center cursor-pointer">
-                                    <input type="radio" name="category" value="corporate" class="text-gold-500 focus:ring-gold-500">
-                                    <span class="ml-2 text-brown-600">Corporate Gift</span>
+                                    <input type="radio" name="category" value="corporate" class="text-tan-500 focus:ring-tan-400">
+                                    <span class="ml-2 text-tan-700">Corporate Gift</span>
                                 </label>
                             </div>
                         </div>
 
                         <!-- Price Filter -->
                         <div class="mb-6">
-                            <h4 class="font-semibold text-brown-700 mb-3">Rentang Harga</h4>
+                            <h4 class="font-semibold text-tan-700 mb-3">Rentang Harga</h4>
                             <div class="space-y-2">
                                 <label class="flex items-center cursor-pointer">
-                                    <input type="radio" name="price" value="all" checked class="text-gold-500 focus:ring-gold-500">
-                                    <span class="ml-2 text-brown-600">Semua Harga</span>
+                                    <input type="radio" name="price" value="all" checked class="text-tan-500 focus:ring-tan-400">
+                                    <span class="ml-2 text-tan-700">Semua Harga</span>
                                 </label>
                                 <label class="flex items-center cursor-pointer">
-                                    <input type="radio" name="price" value="0-300000" class="text-gold-500 focus:ring-gold-500">
-                                    <span class="ml-2 text-brown-600">Di bawah Rp 300.000</span>
+                                    <input type="radio" name="price" value="0-300000" class="text-tan-500 focus:ring-tan-400">
+                                    <span class="ml-2 text-tan-700">Di bawah Rp 300.000</span>
                                 </label>
                                 <label class="flex items-center cursor-pointer">
-                                    <input type="radio" name="price" value="300000-500000" class="text-gold-500 focus:ring-gold-500">
-                                    <span class="ml-2 text-brown-600">Rp 300.000 - 500.000</span>
+                                    <input type="radio" name="price" value="300000-500000" class="text-tan-500 focus:ring-tan-400">
+                                    <span class="ml-2 text-tan-700">Rp 300.000 - 500.000</span>
                                 </label>
                                 <label class="flex items-center cursor-pointer">
-                                    <input type="radio" name="price" value="500000-1000000" class="text-gold-500 focus:ring-gold-500">
-                                    <span class="ml-2 text-brown-600">Rp 500.000 - 1.000.000</span>
+                                    <input type="radio" name="price" value="500000-1000000" class="text-tan-500 focus:ring-tan-400">
+                                    <span class="ml-2 text-tan-700">Rp 500.000 - 1.000.000</span>
                                 </label>
                                 <label class="flex items-center cursor-pointer">
-                                    <input type="radio" name="price" value="1000000-999999999" class="text-gold-500 focus:ring-gold-500">
-                                    <span class="ml-2 text-brown-600">Di atas Rp 1.000.000</span>
+                                    <input type="radio" name="price" value="1000000-999999999" class="text-tan-500 focus:ring-tan-400">
+                                    <span class="ml-2 text-tan-700">Di atas Rp 1.000.000</span>
                                 </label>
                             </div>
                         </div>
 
-                        <button id="resetFilter" class="w-full bg-brown-100 hover:bg-brown-200 text-brown-700 py-2 rounded-lg transition">
+                        <button id="resetFilter" class="w-full bg-cream-200 hover:bg-cream-400 text-tan-700 py-2 rounded-lg transition">
                             Reset Filter
                         </button>
                     </div>
@@ -162,8 +174,8 @@
                 <div class="flex-1">
                     <!-- Sort & Results Info -->
                     <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-6 gap-4">
-                        <p class="text-brown-600"><span id="productCount">0</span> produk ditemukan</p>
-                        <select id="sortBy" class="bg-white border border-brown-200 rounded-lg px-4 py-2 text-brown-700 focus:outline-none focus:ring-2 focus:ring-gold-500">
+                        <p class="text-tan-700"><span id="productCount">0</span> produk ditemukan</p>
+                        <select id="sortBy" class="bg-white border border-cream-400 rounded-lg px-4 py-2 text-tan-700 focus:outline-none focus:ring-2 focus:ring-tan-400">
                             <option value="default">Urutkan: Default</option>
                             <option value="price-low">Harga: Terendah</option>
                             <option value="price-high">Harga: Tertinggi</option>
@@ -178,9 +190,9 @@
 
                     <!-- Empty State -->
                     <div id="emptyState" class="hidden text-center py-16">
-                        <i class="fas fa-box-open text-6xl text-brown-300 mb-4"></i>
-                        <h3 class="text-xl font-semibold text-brown-700 mb-2">Tidak ada produk ditemukan</h3>
-                        <p class="text-brown-500">Coba ubah filter pencarian Anda</p>
+                        <i class="fas fa-box-open text-6xl text-cream-400 mb-4"></i>
+                        <h3 class="text-xl font-semibold text-tan-700 mb-2">Tidak ada produk ditemukan</h3>
+                        <p class="text-tan-600">Coba ubah filter pencarian Anda</p>
                     </div>
                 </div>
             </div>
@@ -188,34 +200,34 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-brown-900 text-white py-12">
+    <footer class="bg-tan-800 text-white py-12">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
                 <div class="col-span-1 md:col-span-2">
                     <div class="flex items-center space-x-2 mb-4">
-                        <i class="fas fa-gift text-gold-400 text-2xl"></i>
+                        <i class="fas fa-gift text-tan-400 text-2xl"></i>
                         <span class="text-2xl font-bold">Victoria Hampers</span>
                     </div>
-                    <p class="text-brown-300 mb-4">Menyediakan hampers premium untuk setiap momen spesial Anda. Kualitas terbaik dengan kemasan elegan.</p>
+                    <p class="text-cream-400 mb-4">Menyediakan hampers premium untuk setiap momen spesial Anda. Kualitas terbaik dengan kemasan elegan.</p>
                     <div class="flex space-x-4">
-                        <a href="#" class="text-brown-300 hover:text-gold-400 transition"><i class="fab fa-instagram text-xl"></i></a>
-                        <a href="#" class="text-brown-300 hover:text-gold-400 transition"><i class="fab fa-facebook text-xl"></i></a>
-                        <a href="#" class="text-brown-300 hover:text-gold-400 transition"><i class="fab fa-tiktok text-xl"></i></a>
+                        <a href="#" class="text-cream-400 hover:text-tan-400 transition"><i class="fab fa-instagram text-xl"></i></a>
+                        <a href="#" class="text-cream-400 hover:text-tan-400 transition"><i class="fab fa-facebook text-xl"></i></a>
+                        <a href="#" class="text-cream-400 hover:text-tan-400 transition"><i class="fab fa-tiktok text-xl"></i></a>
                     </div>
                 </div>
 
                 <div>
                     <h4 class="font-bold text-lg mb-4">Menu</h4>
                     <ul class="space-y-2">
-                        <li><a href="index.html" class="text-brown-300 hover:text-gold-400 transition">Beranda</a></li>
-                        <li><a href="catalog.html" class="text-brown-300 hover:text-gold-400 transition">Katalog</a></li>
-                        <li><a href="contact.html" class="text-brown-300 hover:text-gold-400 transition">Kontak</a></li>
+                        <li><a href="index.html" class="text-cream-400 hover:text-tan-400 transition">Beranda</a></li>
+                        <li><a href="catalog.html" class="text-cream-400 hover:text-tan-400 transition">Katalog</a></li>
+                        <li><a href="contact.html" class="text-cream-400 hover:text-tan-400 transition">Kontak</a></li>
                     </ul>
                 </div>
 
                 <div>
                     <h4 class="font-bold text-lg mb-4">Kontak</h4>
-                    <ul class="space-y-2 text-brown-300">
+                    <ul class="space-y-2 text-cream-400">
                         <li><i class="fab fa-whatsapp mr-2"></i>+65 8500 3405</li>
                         <li><i class="fas fa-envelope mr-2"></i>hello@victoriahampers.com</li>
                         <li><i class="fas fa-map-marker-alt mr-2"></i>Jakarta, Indonesia</li>
@@ -223,7 +235,7 @@
                 </div>
             </div>
 
-            <div class="border-t border-brown-700 mt-8 pt-8 text-center text-brown-400">
+            <div class="border-t border-tan-600 mt-8 pt-8 text-center text-cream-500">
                 <p>&copy; 2024 Victoria Hampers. All rights reserved.</p>
             </div>
         </div>

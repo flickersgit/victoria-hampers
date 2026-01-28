@@ -139,15 +139,15 @@ function createProductCard(product) {
     return `
         <div class="product-card bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition">
             <a href="product.html?id=${product.id}" class="block">
-                <div class="aspect-square overflow-hidden bg-brown-100">
+                <div class="aspect-square overflow-hidden bg-cream-200">
                     <img src="${product.image}" alt="${product.name}"
                          class="product-image w-full h-full object-cover"
-                         onerror="this.src='https://via.placeholder.com/400x400/f0e6dd/cdab8f?text=Victoria+Hampers'">
+                         onerror="this.src='https://via.placeholder.com/400x400/F5E6D3/C4A77D?text=Victoria+Hampers'">
                 </div>
                 <div class="p-4">
-                    <span class="text-xs text-gold-600 font-medium uppercase tracking-wide">${getCategoryLabel(product.category)}</span>
-                    <h3 class="font-semibold text-brown-800 mt-1 mb-2 line-clamp-2">${product.name}</h3>
-                    <p class="text-gold-600 font-bold text-lg">${formatPrice(product.price)}</p>
+                    <span class="text-xs text-tan-500 font-medium uppercase tracking-wide">${getCategoryLabel(product.category)}</span>
+                    <h3 class="font-semibold text-tan-800 mt-1 mb-2 line-clamp-2">${product.name}</h3>
+                    <p class="text-tan-500 font-bold text-lg">${formatPrice(product.price)}</p>
                 </div>
             </a>
             <div class="px-4 pb-4">

@@ -12,29 +12,41 @@
             theme: {
                 extend: {
                     colors: {
-                        gold: {
-                            50: '#fdfaf3',
-                            100: '#f9f0d9',
-                            200: '#f2deb2',
-                            300: '#e9c67a',
-                            400: '#e0ab4a',
-                            500: '#d4912d',
-                            600: '#bc7323',
-                            700: '#9c5620',
-                            800: '#804521',
-                            900: '#6a3a1f',
+                        cream: {
+                            50: '#FFFDF9',
+                            100: '#FEF9F3',
+                            200: '#F9F1E8',
+                            300: '#F5E6D3',
+                            400: '#EDE0D4',
+                            500: '#E6D5C3',
+                            600: '#D5C4B0',
+                            700: '#C4B39D',
+                            800: '#A89683',
+                            900: '#8C7A69',
                         },
-                        brown: {
-                            50: '#faf6f3',
-                            100: '#f0e6dd',
-                            200: '#e0ccba',
-                            300: '#cdab8f',
-                            400: '#b98a68',
-                            500: '#ab7352',
-                            600: '#9d6146',
-                            700: '#834d3b',
-                            800: '#6b4134',
-                            900: '#58372d',
+                        tan: {
+                            50: '#FCF8F4',
+                            100: '#F5EBE0',
+                            200: '#E8D5C0',
+                            300: '#D5B895',
+                            400: '#C4A77D',
+                            500: '#B39768',
+                            600: '#9D8257',
+                            700: '#7D6844',
+                            800: '#5E4E33',
+                            900: '#3F3422',
+                        },
+                        sage: {
+                            50: '#F6F7F4',
+                            100: '#E8EBE4',
+                            200: '#D1D9C9',
+                            300: '#B5C4A8',
+                            400: '#9AB08B',
+                            500: '#7E9B6E',
+                            600: '#658056',
+                            700: '#4D6341',
+                            800: '#35462D',
+                            900: '#1E291A',
                         }
                     }
                 }
@@ -42,23 +54,23 @@
         }
     </script>
 </head>
-<body class="bg-brown-50">
+<body class="bg-cream-100">
     <!-- Navbar -->
     <nav class="bg-white shadow-md sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
                 <a href="index.html" class="flex items-center space-x-2">
-                    <i class="fas fa-gift text-gold-500 text-2xl"></i>
-                    <span class="text-2xl font-bold text-brown-800">Victoria Hampers</span>
+                    <i class="fas fa-gift text-tan-500 text-2xl"></i>
+                    <span class="text-2xl font-bold text-tan-800">Victoria Hampers</span>
                 </a>
 
                 <div class="hidden md:flex space-x-8">
-                    <a href="index.html" class="text-brown-700 hover:text-gold-600 transition">Beranda</a>
-                    <a href="catalog.html" class="text-gold-600 font-medium">Katalog</a>
-                    <a href="contact.html" class="text-brown-700 hover:text-gold-600 transition">Kontak</a>
+                    <a href="index.html" class="text-tan-700 hover:text-tan-500 transition">Beranda</a>
+                    <a href="catalog.html" class="text-tan-500 font-medium">Katalog</a>
+                    <a href="contact.html" class="text-tan-700 hover:text-tan-500 transition">Kontak</a>
                 </div>
 
-                <button id="mobileMenuBtn" class="md:hidden text-brown-700">
+                <button id="mobileMenuBtn" class="md:hidden text-tan-700">
                     <i class="fas fa-bars text-xl"></i>
                 </button>
             </div>
@@ -66,9 +78,9 @@
 
         <div id="mobileMenu" class="hidden md:hidden bg-white border-t">
             <div class="px-4 py-3 space-y-2">
-                <a href="index.html" class="block py-2 text-brown-700">Beranda</a>
-                <a href="catalog.html" class="block py-2 text-gold-600 font-medium">Katalog</a>
-                <a href="contact.html" class="block py-2 text-brown-700">Kontak</a>
+                <a href="index.html" class="block py-2 text-tan-700">Beranda</a>
+                <a href="catalog.html" class="block py-2 text-tan-500 font-medium">Katalog</a>
+                <a href="contact.html" class="block py-2 text-tan-700">Kontak</a>
             </div>
         </div>
     </nav>
@@ -77,11 +89,11 @@
     <div class="bg-white border-b">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
             <nav class="flex items-center space-x-2 text-sm">
-                <a href="index.html" class="text-brown-500 hover:text-gold-600">Beranda</a>
-                <i class="fas fa-chevron-right text-brown-300 text-xs"></i>
-                <a href="catalog.html" class="text-brown-500 hover:text-gold-600">Katalog</a>
-                <i class="fas fa-chevron-right text-brown-300 text-xs"></i>
-                <span id="breadcrumbProduct" class="text-brown-800 font-medium">Detail Produk</span>
+                <a href="index.html" class="text-tan-600 hover:text-tan-500">Beranda</a>
+                <i class="fas fa-chevron-right text-cream-400 text-xs"></i>
+                <a href="catalog.html" class="text-tan-600 hover:text-tan-500">Katalog</a>
+                <i class="fas fa-chevron-right text-cream-400 text-xs"></i>
+                <span id="breadcrumbProduct" class="text-tan-800 font-medium">Detail Produk</span>
             </nav>
         </div>
     </div>
@@ -96,9 +108,9 @@
     </section>
 
     <!-- Related Products -->
-    <section class="py-12 bg-brown-50">
+    <section class="py-12 bg-cream-100">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-2xl font-bold text-brown-800 mb-6">Produk Terkait</h2>
+            <h2 class="text-2xl font-bold text-tan-800 mb-6">Produk Terkait</h2>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6" id="relatedProducts">
                 <!-- Related products will be loaded by JavaScript -->
             </div>
@@ -106,34 +118,34 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-brown-900 text-white py-12">
+    <footer class="bg-tan-800 text-white py-12">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
                 <div class="col-span-1 md:col-span-2">
                     <div class="flex items-center space-x-2 mb-4">
-                        <i class="fas fa-gift text-gold-400 text-2xl"></i>
+                        <i class="fas fa-gift text-tan-400 text-2xl"></i>
                         <span class="text-2xl font-bold">Victoria Hampers</span>
                     </div>
-                    <p class="text-brown-300 mb-4">Menyediakan hampers premium untuk setiap momen spesial Anda. Kualitas terbaik dengan kemasan elegan.</p>
+                    <p class="text-cream-400 mb-4">Menyediakan hampers premium untuk setiap momen spesial Anda. Kualitas terbaik dengan kemasan elegan.</p>
                     <div class="flex space-x-4">
-                        <a href="#" class="text-brown-300 hover:text-gold-400 transition"><i class="fab fa-instagram text-xl"></i></a>
-                        <a href="#" class="text-brown-300 hover:text-gold-400 transition"><i class="fab fa-facebook text-xl"></i></a>
-                        <a href="#" class="text-brown-300 hover:text-gold-400 transition"><i class="fab fa-tiktok text-xl"></i></a>
+                        <a href="#" class="text-cream-400 hover:text-tan-400 transition"><i class="fab fa-instagram text-xl"></i></a>
+                        <a href="#" class="text-cream-400 hover:text-tan-400 transition"><i class="fab fa-facebook text-xl"></i></a>
+                        <a href="#" class="text-cream-400 hover:text-tan-400 transition"><i class="fab fa-tiktok text-xl"></i></a>
                     </div>
                 </div>
 
                 <div>
                     <h4 class="font-bold text-lg mb-4">Menu</h4>
                     <ul class="space-y-2">
-                        <li><a href="index.html" class="text-brown-300 hover:text-gold-400 transition">Beranda</a></li>
-                        <li><a href="catalog.html" class="text-brown-300 hover:text-gold-400 transition">Katalog</a></li>
-                        <li><a href="contact.html" class="text-brown-300 hover:text-gold-400 transition">Kontak</a></li>
+                        <li><a href="index.html" class="text-cream-400 hover:text-tan-400 transition">Beranda</a></li>
+                        <li><a href="catalog.html" class="text-cream-400 hover:text-tan-400 transition">Katalog</a></li>
+                        <li><a href="contact.html" class="text-cream-400 hover:text-tan-400 transition">Kontak</a></li>
                     </ul>
                 </div>
 
                 <div>
                     <h4 class="font-bold text-lg mb-4">Kontak</h4>
-                    <ul class="space-y-2 text-brown-300">
+                    <ul class="space-y-2 text-cream-400">
                         <li><i class="fab fa-whatsapp mr-2"></i>+65 8500 3405</li>
                         <li><i class="fas fa-envelope mr-2"></i>hello@victoriahampers.com</li>
                         <li><i class="fas fa-map-marker-alt mr-2"></i>Jakarta, Indonesia</li>
@@ -141,7 +153,7 @@
                 </div>
             </div>
 
-            <div class="border-t border-brown-700 mt-8 pt-8 text-center text-brown-400">
+            <div class="border-t border-tan-600 mt-8 pt-8 text-center text-cream-500">
                 <p>&copy; 2024 Victoria Hampers. All rights reserved.</p>
             </div>
         </div>
@@ -184,20 +196,20 @@
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 p-6 lg:p-8">
                     <!-- Image Gallery -->
                     <div>
-                        <div class="aspect-square rounded-xl overflow-hidden bg-brown-100 mb-4">
+                        <div class="aspect-square rounded-xl overflow-hidden bg-cream-200 mb-4">
                             <img id="mainImage" src="${product.image}" alt="${product.name}" class="w-full h-full object-cover">
                         </div>
                         <div class="grid grid-cols-4 gap-2">
-                            <button onclick="changeImage('${product.image}')" class="aspect-square rounded-lg overflow-hidden bg-brown-100 border-2 border-gold-500">
+                            <button onclick="changeImage('${product.image}')" class="aspect-square rounded-lg overflow-hidden bg-cream-200 border-2 border-tan-400">
                                 <img src="${product.image}" alt="${product.name}" class="w-full h-full object-cover">
                             </button>
-                            <button onclick="changeImage('${product.image}')" class="aspect-square rounded-lg overflow-hidden bg-brown-100 border-2 border-transparent hover:border-gold-300">
+                            <button onclick="changeImage('${product.image}')" class="aspect-square rounded-lg overflow-hidden bg-cream-200 border-2 border-transparent hover:border-tan-300">
                                 <img src="${product.image}" alt="${product.name}" class="w-full h-full object-cover">
                             </button>
-                            <button onclick="changeImage('${product.image}')" class="aspect-square rounded-lg overflow-hidden bg-brown-100 border-2 border-transparent hover:border-gold-300">
+                            <button onclick="changeImage('${product.image}')" class="aspect-square rounded-lg overflow-hidden bg-cream-200 border-2 border-transparent hover:border-tan-300">
                                 <img src="${product.image}" alt="${product.name}" class="w-full h-full object-cover">
                             </button>
-                            <button onclick="changeImage('${product.image}')" class="aspect-square rounded-lg overflow-hidden bg-brown-100 border-2 border-transparent hover:border-gold-300">
+                            <button onclick="changeImage('${product.image}')" class="aspect-square rounded-lg overflow-hidden bg-cream-200 border-2 border-transparent hover:border-tan-300">
                                 <img src="${product.image}" alt="${product.name}" class="w-full h-full object-cover">
                             </button>
                         </div>
@@ -205,20 +217,20 @@
 
                     <!-- Product Info -->
                     <div>
-                        <span class="inline-block bg-gold-100 text-gold-700 px-3 py-1 rounded-full text-sm font-medium mb-3">
+                        <span class="inline-block bg-cream-300 text-tan-600 px-3 py-1 rounded-full text-sm font-medium mb-3">
                             ${categoryLabels[product.category]}
                         </span>
-                        <h1 class="text-3xl font-bold text-brown-800 mb-4">${product.name}</h1>
-                        <p class="text-3xl font-bold text-gold-600 mb-6">${formatPrice(product.price)}</p>
+                        <h1 class="text-3xl font-bold text-tan-800 mb-4">${product.name}</h1>
+                        <p class="text-3xl font-bold text-tan-500 mb-6">${formatPrice(product.price)}</p>
 
-                        <p class="text-brown-600 mb-6">${product.description}</p>
+                        <p class="text-tan-700 mb-6">${product.description}</p>
 
                         <div class="mb-6">
-                            <h3 class="font-semibold text-brown-800 mb-3">Isi Hampers:</h3>
+                            <h3 class="font-semibold text-tan-800 mb-3">Isi Hampers:</h3>
                             <ul class="space-y-2">
                                 ${product.items.map(item => `
-                                    <li class="flex items-center text-brown-600">
-                                        <i class="fas fa-check text-gold-500 mr-3"></i>
+                                    <li class="flex items-center text-tan-700">
+                                        <i class="fas fa-check text-tan-500 mr-3"></i>
                                         ${item}
                                     </li>
                                 `).join('')}
@@ -231,14 +243,14 @@
                                class="flex-1 bg-green-600 hover:bg-green-700 text-white px-6 py-4 rounded-full font-semibold text-center transition transform hover:scale-105">
                                 <i class="fab fa-whatsapp mr-2"></i>Pesan via WhatsApp
                             </a>
-                            <button onclick="window.history.back()" class="px-6 py-4 border-2 border-brown-300 text-brown-700 rounded-full font-semibold hover:bg-brown-100 transition">
+                            <button onclick="window.history.back()" class="px-6 py-4 border-2 border-cream-500 text-tan-700 rounded-full font-semibold hover:bg-cream-200 transition">
                                 <i class="fas fa-arrow-left mr-2"></i>Kembali
                             </button>
                         </div>
 
-                        <div class="mt-8 p-4 bg-gold-50 rounded-xl">
-                            <h4 class="font-semibold text-brown-800 mb-2"><i class="fas fa-info-circle text-gold-500 mr-2"></i>Informasi</h4>
-                            <ul class="text-sm text-brown-600 space-y-1">
+                        <div class="mt-8 p-4 bg-cream-200 rounded-xl">
+                            <h4 class="font-semibold text-tan-800 mb-2"><i class="fas fa-info-circle text-tan-500 mr-2"></i>Informasi</h4>
+                            <ul class="text-sm text-tan-700 space-y-1">
                                 <li>• Pemesanan H-3 sebelum pengiriman</li>
                                 <li>• Custom kartu ucapan tersedia</li>
                                 <li>• Pengiriman ke seluruh Indonesia</li>

@@ -12,29 +12,41 @@
             theme: {
                 extend: {
                     colors: {
-                        gold: {
-                            50: '#fdfaf3',
-                            100: '#f9f0d9',
-                            200: '#f2deb2',
-                            300: '#e9c67a',
-                            400: '#e0ab4a',
-                            500: '#d4912d',
-                            600: '#bc7323',
-                            700: '#9c5620',
-                            800: '#804521',
-                            900: '#6a3a1f',
+                        cream: {
+                            50: '#FFFDF9',
+                            100: '#FEF9F3',
+                            200: '#F9F1E8',
+                            300: '#F5E6D3',
+                            400: '#EDE0D4',
+                            500: '#E6D5C3',
+                            600: '#D5C4B0',
+                            700: '#C4B39D',
+                            800: '#A89683',
+                            900: '#8C7A69',
                         },
-                        brown: {
-                            50: '#faf6f3',
-                            100: '#f0e6dd',
-                            200: '#e0ccba',
-                            300: '#cdab8f',
-                            400: '#b98a68',
-                            500: '#ab7352',
-                            600: '#9d6146',
-                            700: '#834d3b',
-                            800: '#6b4134',
-                            900: '#58372d',
+                        tan: {
+                            50: '#FCF8F4',
+                            100: '#F5EBE0',
+                            200: '#E8D5C0',
+                            300: '#D5B895',
+                            400: '#C4A77D',
+                            500: '#B39768',
+                            600: '#9D8257',
+                            700: '#7D6844',
+                            800: '#5E4E33',
+                            900: '#3F3422',
+                        },
+                        sage: {
+                            50: '#F6F7F4',
+                            100: '#E8EBE4',
+                            200: '#D1D9C9',
+                            300: '#B5C4A8',
+                            400: '#9AB08B',
+                            500: '#7E9B6E',
+                            600: '#658056',
+                            700: '#4D6341',
+                            800: '#35462D',
+                            900: '#1E291A',
                         }
                     }
                 }
@@ -42,23 +54,23 @@
         }
     </script>
 </head>
-<body class="bg-brown-50">
+<body class="bg-cream-100">
     <!-- Navbar -->
     <nav class="bg-white shadow-md sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
                 <a href="index.html" class="flex items-center space-x-2">
-                    <i class="fas fa-gift text-gold-500 text-2xl"></i>
-                    <span class="text-2xl font-bold text-brown-800">Victoria Hampers</span>
+                    <i class="fas fa-gift text-tan-500 text-2xl"></i>
+                    <span class="text-2xl font-bold text-tan-800">Victoria Hampers</span>
                 </a>
 
                 <div class="hidden md:flex space-x-8">
-                    <a href="index.html" class="text-brown-700 hover:text-gold-600 transition">Beranda</a>
-                    <a href="catalog.html" class="text-brown-700 hover:text-gold-600 transition">Katalog</a>
-                    <a href="contact.html" class="text-gold-600 font-medium">Kontak</a>
+                    <a href="index.html" class="text-tan-700 hover:text-tan-500 transition">Beranda</a>
+                    <a href="catalog.html" class="text-tan-700 hover:text-tan-500 transition">Katalog</a>
+                    <a href="contact.html" class="text-tan-500 font-medium">Kontak</a>
                 </div>
 
-                <button id="mobileMenuBtn" class="md:hidden text-brown-700">
+                <button id="mobileMenuBtn" class="md:hidden text-tan-700">
                     <i class="fas fa-bars text-xl"></i>
                 </button>
             </div>
@@ -66,18 +78,18 @@
 
         <div id="mobileMenu" class="hidden md:hidden bg-white border-t">
             <div class="px-4 py-3 space-y-2">
-                <a href="index.html" class="block py-2 text-brown-700">Beranda</a>
-                <a href="catalog.html" class="block py-2 text-brown-700">Katalog</a>
-                <a href="contact.html" class="block py-2 text-gold-600 font-medium">Kontak</a>
+                <a href="index.html" class="block py-2 text-tan-700">Beranda</a>
+                <a href="catalog.html" class="block py-2 text-tan-700">Katalog</a>
+                <a href="contact.html" class="block py-2 text-tan-500 font-medium">Kontak</a>
             </div>
         </div>
     </nav>
 
     <!-- Page Header -->
-    <section class="bg-gradient-to-r from-brown-700 to-brown-800 text-white py-12">
+    <section class="bg-gradient-to-r from-tan-600 to-tan-700 text-white py-12">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h1 class="text-3xl md:text-4xl font-bold mb-2">Hubungi Kami</h1>
-            <p class="text-brown-200">Kami siap membantu kebutuhan hampers Anda</p>
+            <p class="text-cream-300">Kami siap membantu kebutuhan hampers Anda</p>
         </div>
     </section>
 
@@ -87,7 +99,7 @@
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
                 <!-- Contact Info -->
                 <div>
-                    <h2 class="text-2xl font-bold text-brown-800 mb-6">Informasi Kontak</h2>
+                    <h2 class="text-2xl font-bold text-tan-800 mb-6">Informasi Kontak</h2>
 
                     <div class="space-y-6">
                         <div class="flex items-start space-x-4">
@@ -95,20 +107,20 @@
                                 <i class="fab fa-whatsapp text-2xl text-green-600"></i>
                             </div>
                             <div>
-                                <h3 class="font-semibold text-brown-800">WhatsApp</h3>
-                                <p class="text-brown-600">+65 8500 3405</p>
-                                <a href="https://wa.me/6585003405" target="_blank" class="text-gold-600 hover:text-gold-700 text-sm">Chat Sekarang →</a>
+                                <h3 class="font-semibold text-tan-800">WhatsApp</h3>
+                                <p class="text-tan-700">+65 8500 3405</p>
+                                <a href="https://wa.me/6585003405" target="_blank" class="text-tan-500 hover:text-tan-600 text-sm">Chat Sekarang →</a>
                             </div>
                         </div>
 
                         <div class="flex items-start space-x-4">
-                            <div class="w-12 h-12 bg-gold-100 rounded-full flex items-center justify-center flex-shrink-0">
-                                <i class="fas fa-envelope text-2xl text-gold-600"></i>
+                            <div class="w-12 h-12 bg-cream-300 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-envelope text-2xl text-tan-500"></i>
                             </div>
                             <div>
-                                <h3 class="font-semibold text-brown-800">Email</h3>
-                                <p class="text-brown-600">hello@victoriahampers.com</p>
-                                <p class="text-brown-500 text-sm">Balasan dalam 1x24 jam</p>
+                                <h3 class="font-semibold text-tan-800">Email</h3>
+                                <p class="text-tan-700">hello@victoriahampers.com</p>
+                                <p class="text-tan-600 text-sm">Balasan dalam 1x24 jam</p>
                             </div>
                         </div>
 
@@ -117,20 +129,20 @@
                                 <i class="fab fa-instagram text-2xl text-pink-600"></i>
                             </div>
                             <div>
-                                <h3 class="font-semibold text-brown-800">Instagram</h3>
-                                <p class="text-brown-600">@victoriahampers</p>
-                                <a href="#" class="text-gold-600 hover:text-gold-700 text-sm">Follow Kami →</a>
+                                <h3 class="font-semibold text-tan-800">Instagram</h3>
+                                <p class="text-tan-700">@victoriahampers</p>
+                                <a href="#" class="text-tan-500 hover:text-tan-600 text-sm">Follow Kami →</a>
                             </div>
                         </div>
 
                         <div class="flex items-start space-x-4">
-                            <div class="w-12 h-12 bg-brown-100 rounded-full flex items-center justify-center flex-shrink-0">
-                                <i class="fas fa-map-marker-alt text-2xl text-brown-600"></i>
+                            <div class="w-12 h-12 bg-cream-200 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-map-marker-alt text-2xl text-tan-700"></i>
                             </div>
                             <div>
-                                <h3 class="font-semibold text-brown-800">Alamat</h3>
-                                <p class="text-brown-600">Jakarta, Indonesia</p>
-                                <p class="text-brown-500 text-sm">Hanya melayani online order</p>
+                                <h3 class="font-semibold text-tan-800">Alamat</h3>
+                                <p class="text-tan-700">Jakarta, Indonesia</p>
+                                <p class="text-tan-600 text-sm">Hanya melayani online order</p>
                             </div>
                         </div>
 
@@ -139,17 +151,17 @@
                                 <i class="fas fa-clock text-2xl text-blue-600"></i>
                             </div>
                             <div>
-                                <h3 class="font-semibold text-brown-800">Jam Operasional</h3>
-                                <p class="text-brown-600">Senin - Sabtu: 09.00 - 18.00 WIB</p>
-                                <p class="text-brown-500 text-sm">Minggu & Tanggal Merah: Tutup</p>
+                                <h3 class="font-semibold text-tan-800">Jam Operasional</h3>
+                                <p class="text-tan-700">Senin - Sabtu: 09.00 - 18.00 WIB</p>
+                                <p class="text-tan-600 text-sm">Minggu & Tanggal Merah: Tutup</p>
                             </div>
                         </div>
                     </div>
 
                     <!-- Quick WhatsApp -->
                     <div class="mt-8 p-6 bg-green-50 rounded-xl">
-                        <h3 class="font-bold text-brown-800 mb-3">Pesan Cepat via WhatsApp</h3>
-                        <p class="text-brown-600 mb-4 text-sm">Klik tombol di bawah untuk langsung terhubung dengan tim kami</p>
+                        <h3 class="font-bold text-tan-800 mb-3">Pesan Cepat via WhatsApp</h3>
+                        <p class="text-tan-700 mb-4 text-sm">Klik tombol di bawah untuk langsung terhubung dengan tim kami</p>
                         <a href="https://wa.me/6585003405?text=Halo%20Victoria%20Hampers,%20saya%20ingin%20bertanya%20tentang%20produk%20hampers"
                            target="_blank"
                            class="inline-block bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-full font-semibold transition transform hover:scale-105">
@@ -161,34 +173,34 @@
                 <!-- Contact Form -->
                 <div>
                     <div class="bg-white rounded-2xl shadow-lg p-8">
-                        <h2 class="text-2xl font-bold text-brown-800 mb-6">Kirim Pesan</h2>
+                        <h2 class="text-2xl font-bold text-tan-800 mb-6">Kirim Pesan</h2>
 
                         <form id="contactForm" class="space-y-6">
                             <div>
-                                <label for="name" class="block text-brown-700 font-medium mb-2">Nama Lengkap</label>
+                                <label for="name" class="block text-tan-700 font-medium mb-2">Nama Lengkap</label>
                                 <input type="text" id="name" name="name" required
-                                    class="w-full px-4 py-3 border border-brown-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-gold-500 focus:border-transparent"
+                                    class="w-full px-4 py-3 border border-cream-400 rounded-lg focus:outline-none focus:ring-2 focus:ring-tan-400 focus:border-transparent"
                                     placeholder="Masukkan nama Anda">
                             </div>
 
                             <div>
-                                <label for="phone" class="block text-brown-700 font-medium mb-2">Nomor WhatsApp</label>
+                                <label for="phone" class="block text-tan-700 font-medium mb-2">Nomor WhatsApp</label>
                                 <input type="tel" id="phone" name="phone" required
-                                    class="w-full px-4 py-3 border border-brown-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-gold-500 focus:border-transparent"
+                                    class="w-full px-4 py-3 border border-cream-400 rounded-lg focus:outline-none focus:ring-2 focus:ring-tan-400 focus:border-transparent"
                                     placeholder="08xx-xxxx-xxxx">
                             </div>
 
                             <div>
-                                <label for="email" class="block text-brown-700 font-medium mb-2">Email</label>
+                                <label for="email" class="block text-tan-700 font-medium mb-2">Email</label>
                                 <input type="email" id="email" name="email"
-                                    class="w-full px-4 py-3 border border-brown-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-gold-500 focus:border-transparent"
+                                    class="w-full px-4 py-3 border border-cream-400 rounded-lg focus:outline-none focus:ring-2 focus:ring-tan-400 focus:border-transparent"
                                     placeholder="email@example.com">
                             </div>
 
                             <div>
-                                <label for="category" class="block text-brown-700 font-medium mb-2">Kategori Hampers</label>
+                                <label for="category" class="block text-tan-700 font-medium mb-2">Kategori Hampers</label>
                                 <select id="category" name="category"
-                                    class="w-full px-4 py-3 border border-brown-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-gold-500 focus:border-transparent">
+                                    class="w-full px-4 py-3 border border-cream-400 rounded-lg focus:outline-none focus:ring-2 focus:ring-tan-400 focus:border-transparent">
                                     <option value="">Pilih Kategori</option>
                                     <option value="lebaran">Hampers Lebaran</option>
                                     <option value="natal">Hampers Natal & Tahun Baru</option>
@@ -201,14 +213,14 @@
                             </div>
 
                             <div>
-                                <label for="message" class="block text-brown-700 font-medium mb-2">Pesan</label>
+                                <label for="message" class="block text-tan-700 font-medium mb-2">Pesan</label>
                                 <textarea id="message" name="message" rows="4" required
-                                    class="w-full px-4 py-3 border border-brown-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-gold-500 focus:border-transparent resize-none"
+                                    class="w-full px-4 py-3 border border-cream-400 rounded-lg focus:outline-none focus:ring-2 focus:ring-tan-400 focus:border-transparent resize-none"
                                     placeholder="Tulis pesan atau pertanyaan Anda..."></textarea>
                             </div>
 
                             <button type="submit"
-                                class="w-full bg-gold-500 hover:bg-gold-600 text-white py-4 rounded-full font-semibold text-lg transition transform hover:scale-105">
+                                class="w-full bg-tan-400 hover:bg-tan-500 text-white py-4 rounded-full font-semibold text-lg transition transform hover:scale-105">
                                 <i class="fas fa-paper-plane mr-2"></i>Kirim Pesan
                             </button>
                         </form>
@@ -221,55 +233,55 @@
     <!-- FAQ Section -->
     <section class="py-12 bg-white">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-2xl font-bold text-brown-800 mb-8 text-center">Pertanyaan Umum (FAQ)</h2>
+            <h2 class="text-2xl font-bold text-tan-800 mb-8 text-center">Pertanyaan Umum (FAQ)</h2>
 
             <div class="space-y-4">
-                <div class="border border-brown-200 rounded-xl overflow-hidden">
-                    <button class="faq-toggle w-full px-6 py-4 text-left flex justify-between items-center bg-brown-50 hover:bg-brown-100 transition">
-                        <span class="font-semibold text-brown-800">Berapa lama waktu pemesanan sebelum pengiriman?</span>
-                        <i class="fas fa-chevron-down text-brown-500 transition-transform"></i>
+                <div class="border border-cream-400 rounded-xl overflow-hidden">
+                    <button class="faq-toggle w-full px-6 py-4 text-left flex justify-between items-center bg-cream-100 hover:bg-cream-200 transition">
+                        <span class="font-semibold text-tan-800">Berapa lama waktu pemesanan sebelum pengiriman?</span>
+                        <i class="fas fa-chevron-down text-tan-600 transition-transform"></i>
                     </button>
-                    <div class="faq-content hidden px-6 py-4 text-brown-600">
+                    <div class="faq-content hidden px-6 py-4 text-tan-700">
                         Kami menyarankan pemesanan minimal H-3 sebelum tanggal pengiriman yang diinginkan. Untuk pesanan dalam jumlah besar (corporate), disarankan H-7 untuk memastikan ketersediaan produk.
                     </div>
                 </div>
 
-                <div class="border border-brown-200 rounded-xl overflow-hidden">
-                    <button class="faq-toggle w-full px-6 py-4 text-left flex justify-between items-center bg-brown-50 hover:bg-brown-100 transition">
-                        <span class="font-semibold text-brown-800">Apakah bisa custom isi hampers?</span>
-                        <i class="fas fa-chevron-down text-brown-500 transition-transform"></i>
+                <div class="border border-cream-400 rounded-xl overflow-hidden">
+                    <button class="faq-toggle w-full px-6 py-4 text-left flex justify-between items-center bg-cream-100 hover:bg-cream-200 transition">
+                        <span class="font-semibold text-tan-800">Apakah bisa custom isi hampers?</span>
+                        <i class="fas fa-chevron-down text-tan-600 transition-transform"></i>
                     </button>
-                    <div class="faq-content hidden px-6 py-4 text-brown-600">
+                    <div class="faq-content hidden px-6 py-4 text-tan-700">
                         Ya, kami menerima custom hampers sesuai dengan kebutuhan dan budget Anda. Silakan hubungi kami via WhatsApp untuk konsultasi lebih lanjut.
                     </div>
                 </div>
 
-                <div class="border border-brown-200 rounded-xl overflow-hidden">
-                    <button class="faq-toggle w-full px-6 py-4 text-left flex justify-between items-center bg-brown-50 hover:bg-brown-100 transition">
-                        <span class="font-semibold text-brown-800">Bagaimana cara pembayaran?</span>
-                        <i class="fas fa-chevron-down text-brown-500 transition-transform"></i>
+                <div class="border border-cream-400 rounded-xl overflow-hidden">
+                    <button class="faq-toggle w-full px-6 py-4 text-left flex justify-between items-center bg-cream-100 hover:bg-cream-200 transition">
+                        <span class="font-semibold text-tan-800">Bagaimana cara pembayaran?</span>
+                        <i class="fas fa-chevron-down text-tan-600 transition-transform"></i>
                     </button>
-                    <div class="faq-content hidden px-6 py-4 text-brown-600">
+                    <div class="faq-content hidden px-6 py-4 text-tan-700">
                         Kami menerima pembayaran via transfer bank (BCA, Mandiri, BNI) dan e-wallet (GoPay, OVO, Dana). Untuk pesanan corporate, tersedia opsi pembayaran invoice.
                     </div>
                 </div>
 
-                <div class="border border-brown-200 rounded-xl overflow-hidden">
-                    <button class="faq-toggle w-full px-6 py-4 text-left flex justify-between items-center bg-brown-50 hover:bg-brown-100 transition">
-                        <span class="font-semibold text-brown-800">Apakah bisa kirim ke luar kota?</span>
-                        <i class="fas fa-chevron-down text-brown-500 transition-transform"></i>
+                <div class="border border-cream-400 rounded-xl overflow-hidden">
+                    <button class="faq-toggle w-full px-6 py-4 text-left flex justify-between items-center bg-cream-100 hover:bg-cream-200 transition">
+                        <span class="font-semibold text-tan-800">Apakah bisa kirim ke luar kota?</span>
+                        <i class="fas fa-chevron-down text-tan-600 transition-transform"></i>
                     </button>
-                    <div class="faq-content hidden px-6 py-4 text-brown-600">
+                    <div class="faq-content hidden px-6 py-4 text-tan-700">
                         Ya, kami melayani pengiriman ke seluruh Indonesia. Ongkos kirim akan disesuaikan dengan berat paket dan lokasi tujuan. Untuk hampers dengan produk yang mudah rusak, pengiriman hanya tersedia untuk area tertentu.
                     </div>
                 </div>
 
-                <div class="border border-brown-200 rounded-xl overflow-hidden">
-                    <button class="faq-toggle w-full px-6 py-4 text-left flex justify-between items-center bg-brown-50 hover:bg-brown-100 transition">
-                        <span class="font-semibold text-brown-800">Apakah tersedia kartu ucapan?</span>
-                        <i class="fas fa-chevron-down text-brown-500 transition-transform"></i>
+                <div class="border border-cream-400 rounded-xl overflow-hidden">
+                    <button class="faq-toggle w-full px-6 py-4 text-left flex justify-between items-center bg-cream-100 hover:bg-cream-200 transition">
+                        <span class="font-semibold text-tan-800">Apakah tersedia kartu ucapan?</span>
+                        <i class="fas fa-chevron-down text-tan-600 transition-transform"></i>
                     </button>
-                    <div class="faq-content hidden px-6 py-4 text-brown-600">
+                    <div class="faq-content hidden px-6 py-4 text-tan-700">
                         Ya, setiap hampers sudah termasuk kartu ucapan gratis. Anda bisa menuliskan pesan custom yang akan kami cetak pada kartu ucapan.
                     </div>
                 </div>
@@ -278,34 +290,34 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-brown-900 text-white py-12">
+    <footer class="bg-tan-800 text-white py-12">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
                 <div class="col-span-1 md:col-span-2">
                     <div class="flex items-center space-x-2 mb-4">
-                        <i class="fas fa-gift text-gold-400 text-2xl"></i>
+                        <i class="fas fa-gift text-tan-400 text-2xl"></i>
                         <span class="text-2xl font-bold">Victoria Hampers</span>
                     </div>
-                    <p class="text-brown-300 mb-4">Menyediakan hampers premium untuk setiap momen spesial Anda. Kualitas terbaik dengan kemasan elegan.</p>
+                    <p class="text-cream-400 mb-4">Menyediakan hampers premium untuk setiap momen spesial Anda. Kualitas terbaik dengan kemasan elegan.</p>
                     <div class="flex space-x-4">
-                        <a href="#" class="text-brown-300 hover:text-gold-400 transition"><i class="fab fa-instagram text-xl"></i></a>
-                        <a href="#" class="text-brown-300 hover:text-gold-400 transition"><i class="fab fa-facebook text-xl"></i></a>
-                        <a href="#" class="text-brown-300 hover:text-gold-400 transition"><i class="fab fa-tiktok text-xl"></i></a>
+                        <a href="#" class="text-cream-400 hover:text-tan-400 transition"><i class="fab fa-instagram text-xl"></i></a>
+                        <a href="#" class="text-cream-400 hover:text-tan-400 transition"><i class="fab fa-facebook text-xl"></i></a>
+                        <a href="#" class="text-cream-400 hover:text-tan-400 transition"><i class="fab fa-tiktok text-xl"></i></a>
                     </div>
                 </div>
 
                 <div>
                     <h4 class="font-bold text-lg mb-4">Menu</h4>
                     <ul class="space-y-2">
-                        <li><a href="index.html" class="text-brown-300 hover:text-gold-400 transition">Beranda</a></li>
-                        <li><a href="catalog.html" class="text-brown-300 hover:text-gold-400 transition">Katalog</a></li>
-                        <li><a href="contact.html" class="text-brown-300 hover:text-gold-400 transition">Kontak</a></li>
+                        <li><a href="index.html" class="text-cream-400 hover:text-tan-400 transition">Beranda</a></li>
+                        <li><a href="catalog.html" class="text-cream-400 hover:text-tan-400 transition">Katalog</a></li>
+                        <li><a href="contact.html" class="text-cream-400 hover:text-tan-400 transition">Kontak</a></li>
                     </ul>
                 </div>
 
                 <div>
                     <h4 class="font-bold text-lg mb-4">Kontak</h4>
-                    <ul class="space-y-2 text-brown-300">
+                    <ul class="space-y-2 text-cream-400">
                         <li><i class="fab fa-whatsapp mr-2"></i>+65 8500 3405</li>
                         <li><i class="fas fa-envelope mr-2"></i>hello@victoriahampers.com</li>
                         <li><i class="fas fa-map-marker-alt mr-2"></i>Jakarta, Indonesia</li>
@@ -313,7 +325,7 @@
                 </div>
             </div>
 
-            <div class="border-t border-brown-700 mt-8 pt-8 text-center text-brown-400">
+            <div class="border-t border-tan-600 mt-8 pt-8 text-center text-cream-500">
                 <p>&copy; 2024 Victoria Hampers. All rights reserved.</p>
             </div>
         </div>
